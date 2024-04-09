@@ -13,7 +13,7 @@
 
     <body>
 
-        <h1>Web Aapp Libri - Firebase: Firestore</h1>
+        <h1>Web App Libri - Firebase: Firestore</h1>
 
         <div class="content">
 
@@ -30,7 +30,29 @@
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 
     <!-- dados de credenciais de acesso ao FireBase -->
-    <script></script>
+    <script>
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAZNq1761gFmrsC1VGufPbprFiWDYOuA3U",
+            authDomain: "app-libri-igor-de-moura-6ae03.firebaseapp.com",
+            projectId: "app-libri-igor-de-moura-6ae03",
+            storageBucket: "app-libri-igor-de-moura-6ae03.appspot.com",
+            messagingSenderId: "118285003868",
+            appId: "1:118285003868:web:8b9c16e72530fd4ef34a99",
+            measurementId: "G-PJQRDWXFWC"
+        };
+
+        /*Inicialização do Firebase no App Web*/
+        firebase.initializeApp(firebaseConfig);
+
+        /*Inicialização a Conexão com o Banco de Dados NOSQL Firestore*/
+        const db = firebase.firestore();
+
+        /*Teste da Conexão com o Firestore
+        console.log('Teste de Conexão com o Firestore: ')
+        console.log(db);*/
+
+    </script>
 
     <script src="app.js"></script>
 
